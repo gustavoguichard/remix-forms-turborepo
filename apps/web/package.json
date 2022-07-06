@@ -7,7 +7,10 @@
     "dev": "concurrently \"remix-routes -w\" \"npm run dev:css\" \"npm run dev:remix\"",
     "dev:remix": "cross-env NODE_ENV=development remix dev",
     "dev:css": "tailwindcss -w -i ./styles/app.css -o app/styles/app.css",
-    "start": "remix-serve build"
+    "start": "remix-serve build",
+    "test": "playwright test",
+    "pretest:ci": "npm run build",
+    "test:ci": "playwright test"
   },
   "dependencies": {
     "@headlessui/react": "^1.5.0",

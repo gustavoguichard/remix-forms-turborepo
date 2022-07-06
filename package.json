@@ -11,7 +11,8 @@
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "postinstall": "patch-package"
+    "postinstall": "patch-package",
+    "test": "turbo run test --parallel"
   },
   "devDependencies": {
     "eslint-config-custom": "*",
